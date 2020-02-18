@@ -1,0 +1,166 @@
+Application: System Settings (systemsettings5), signal: Segmentation fault
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+[Current thread is 1 (Thread 0x7f761e1f0cc0 (LWP 4103))]
+
+Thread 6 (Thread 0x7f760725d700 (LWP 4110)):
+#0  0x00007f76229004fc in read () from /usr/lib/libc.so.6
+#1  0x00007f76208859f0 in ?? () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f76208d39e1 in g_main_context_check () from /usr/lib/libglib-2.0.so.0
+#3  0x00007f76208d50c8 in ?? () from /usr/lib/libglib-2.0.so.0
+#4  0x00007f76208d51f1 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#5  0x00007f7622ebd03c in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#6  0x00007f7622e634cc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#7  0x00007f7622c87e52 in QThread::exec() () from /usr/lib/libQt5Core.so.5
+#8  0x00007f7621f2bf89 in ?? () from /usr/lib/libQt5Qml.so.5
+#9  0x00007f7622c88fc6 in ?? () from /usr/lib/libQt5Core.so.5
+#10 0x00007f76214e546f in start_thread () from /usr/lib/libpthread.so.0
+#11 0x00007f762290f3d3 in clone () from /usr/lib/libc.so.6
+
+Thread 5 (Thread 0x7f760dd59700 (LWP 4108)):
+#0  0x00007f7622904abf in poll () from /usr/lib/libc.so.6
+#1  0x00007f76208d5120 in ?? () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f76208d51f1 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#3  0x00007f7622ebd03c in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#4  0x00007f7622e634cc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#5  0x00007f7622c87e52 in QThread::exec() () from /usr/lib/libQt5Core.so.5
+#6  0x00007f7621f2bf89 in ?? () from /usr/lib/libQt5Qml.so.5
+#7  0x00007f7622c88fc6 in ?? () from /usr/lib/libQt5Core.so.5
+#8  0x00007f76214e546f in start_thread () from /usr/lib/libpthread.so.0
+#9  0x00007f762290f3d3 in clone () from /usr/lib/libc.so.6
+
+Thread 4 (Thread 0x7f760ffff700 (LWP 4107)):
+#0  0x00007f7622904abf in poll () from /usr/lib/libc.so.6
+#1  0x00007f76208d5120 in ?? () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f76208d51f1 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#3  0x00007f7622ebd03c in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#4  0x00007f7622e634cc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#5  0x00007f7622c87e52 in QThread::exec() () from /usr/lib/libQt5Core.so.5
+#6  0x00007f7621f2bf89 in ?? () from /usr/lib/libQt5Qml.so.5
+#7  0x00007f7622c88fc6 in ?? () from /usr/lib/libQt5Core.so.5
+#8  0x00007f76214e546f in start_thread () from /usr/lib/libpthread.so.0
+#9  0x00007f762290f3d3 in clone () from /usr/lib/libc.so.6
+
+Thread 3 (Thread 0x7f7617ce1700 (LWP 4106)):
+#0  0x00007f76229004fc in read () from /usr/lib/libc.so.6
+#1  0x00007f76208859f0 in ?? () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f76208d39e1 in g_main_context_check () from /usr/lib/libglib-2.0.so.0
+#3  0x00007f76208d50c8 in ?? () from /usr/lib/libglib-2.0.so.0
+#4  0x00007f76208d51f1 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#5  0x00007f7622ebd03c in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#6  0x00007f7622e634cc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#7  0x00007f7622c87e52 in QThread::exec() () from /usr/lib/libQt5Core.so.5
+#8  0x00007f762310db28 in ?? () from /usr/lib/libQt5DBus.so.5
+#9  0x00007f7622c88fc6 in ?? () from /usr/lib/libQt5Core.so.5
+#10 0x00007f76214e546f in start_thread () from /usr/lib/libpthread.so.0
+#11 0x00007f762290f3d3 in clone () from /usr/lib/libc.so.6
+
+Thread 2 (Thread 0x7f761d137700 (LWP 4105)):
+#0  0x00007f7622904abf in poll () from /usr/lib/libc.so.6
+#1  0x00007f76214a4630 in ?? () from /usr/lib/libxcb.so.1
+#2  0x00007f76214a62db in xcb_wait_for_event () from /usr/lib/libxcb.so.1
+#3  0x00007f761daebb81 in ?? () from /usr/lib/libQt5XcbQpa.so.5
+#4  0x00007f7622c88fc6 in ?? () from /usr/lib/libQt5Core.so.5
+#5  0x00007f76214e546f in start_thread () from /usr/lib/libpthread.so.0
+#6  0x00007f762290f3d3 in clone () from /usr/lib/libc.so.6
+
+Thread 1 (Thread 0x7f761e1f0cc0 (LWP 4103)):
+[KCrash Handler]
+#6  0x00007f7622e968e8 in QObject::property(char const*) const () from /usr/lib/libQt5Core.so.5
+#7  0x00007f7623a6ae65 in QPixmapStyle::drawComboBox(QStyleOptionComplex const*, QPainter*, QWidget const*) const () from /usr/lib/libQt5Widgets.so.5
+#8  0x00007f760ed6c612 in ?? () from /usr/lib/qt/qml/org/kde/qqc2desktopstyle/private/libqqc2desktopstyleplugin.so
+#9  0x00007f760ed6cc7e in ?? () from /usr/lib/qt/qml/org/kde/qqc2desktopstyle/private/libqqc2desktopstyleplugin.so
+#10 0x00007f76222ed683 in QQuickWindowPrivate::polishItems() () from /usr/lib/libQt5Quick.so.5
+#11 0x00007f76223b7520 in QQuickRenderControl::polishItems() () from /usr/lib/libQt5Quick.so.5
+#12 0x00007f76226103a8 in ?? () from /usr/lib/libQt5QuickWidgets.so.5
+#13 0x00007f76226133ae in QQuickWidget::resizeEvent(QResizeEvent*) () from /usr/lib/libQt5QuickWidgets.so.5
+#14 0x00007f76239ddb86 in QWidget::event(QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#15 0x00007f7622614294 in QQuickWidget::event(QEvent*) () from /usr/lib/libQt5QuickWidgets.so.5
+#16 0x00007f7623999362 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#17 0x00007f76239a2819 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#18 0x00007f7622e64962 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt5Core.so.5
+#19 0x00007f76239d56c0 in QWidgetPrivate::sendPendingMoveAndResizeEvents(bool, bool) () from /usr/lib/libQt5Widgets.so.5
+#20 0x00007f76239d9cf4 in QWidgetPrivate::show_helper() () from /usr/lib/libQt5Widgets.so.5
+#21 0x00007f76239dcfad in QWidgetPrivate::setVisible(bool) () from /usr/lib/libQt5Widgets.so.5
+#22 0x00007f76239d9c73 in QWidgetPrivate::showChildren(bool) () from /usr/lib/libQt5Widgets.so.5
+#23 0x00007f76239d9d12 in QWidgetPrivate::show_helper() () from /usr/lib/libQt5Widgets.so.5
+#24 0x00007f76239dcfad in QWidgetPrivate::setVisible(bool) () from /usr/lib/libQt5Widgets.so.5
+#25 0x00007f76239d9c73 in QWidgetPrivate::showChildren(bool) () from /usr/lib/libQt5Widgets.so.5
+#26 0x00007f76239d9d12 in QWidgetPrivate::show_helper() () from /usr/lib/libQt5Widgets.so.5
+#27 0x00007f76239d9c8a in QWidgetPrivate::showChildren(bool) () from /usr/lib/libQt5Widgets.so.5
+#28 0x00007f76239d9d12 in QWidgetPrivate::show_helper() () from /usr/lib/libQt5Widgets.so.5
+#29 0x00007f76239dcfad in QWidgetPrivate::setVisible(bool) () from /usr/lib/libQt5Widgets.so.5
+#30 0x00007f76239d9c73 in QWidgetPrivate::showChildren(bool) () from /usr/lib/libQt5Widgets.so.5
+#31 0x00007f76239d9d12 in QWidgetPrivate::show_helper() () from /usr/lib/libQt5Widgets.so.5
+#32 0x00007f76239dcfad in QWidgetPrivate::setVisible(bool) () from /usr/lib/libQt5Widgets.so.5
+#33 0x00007f76239c10bc in QStackedLayout::setCurrentIndex(int) () from /usr/lib/libQt5Widgets.so.5
+#34 0x00007f76239c138a in QStackedLayout::setCurrentWidget(QWidget*) () from /usr/lib/libQt5Widgets.so.5
+#35 0x00007f7623b55566 in QStackedWidget::setCurrentWidget(QWidget*) () from /usr/lib/libQt5Widgets.so.5
+#36 0x00007f7624266177 in ?? () from /usr/lib/libKF5WidgetsAddons.so.5
+#37 0x00007f7622e9a4a0 in ?? () from /usr/lib/libQt5Core.so.5
+#38 0x00007f7622e15f41 in QItemSelectionModel::selectionChanged(QItemSelection const&, QItemSelection const&) () from /usr/lib/libQt5Core.so.5
+#39 0x00007f7622e1b70c in QItemSelectionModel::emitSelectionChanged(QItemSelection const&, QItemSelection const&) () from /usr/lib/libQt5Core.so.5
+#40 0x00007f7622e1edf5 in QItemSelectionModel::select(QItemSelection const&, QFlags<QItemSelectionModel::SelectionFlag>) () from /usr/lib/libQt5Core.so.5
+#41 0x00007f7622e18355 in QItemSelectionModel::setCurrentIndex(QModelIndex const&, QFlags<QItemSelectionModel::SelectionFlag>) () from /usr/lib/libQt5Core.so.5
+#42 0x00007f7624264e10 in ?? () from /usr/lib/libKF5WidgetsAddons.so.5
+#43 0x00007f7624265fa2 in ?? () from /usr/lib/libKF5WidgetsAddons.so.5
+#44 0x00007f7622e9a4a0 in ?? () from /usr/lib/libQt5Core.so.5
+#45 0x00007f7622e07347 in QAbstractItemModel::layoutChanged(QList<QPersistentModelIndex> const&, QAbstractItemModel::LayoutChangeHint) () from /usr/lib/libQt5Core.so.5
+#46 0x00007f762426c4c5 in KPageWidgetModel::addPage(KPageWidgetItem*) () from /usr/lib/libKF5WidgetsAddons.so.5
+#47 0x00007f762457aa90 in ModuleView::addModule(KCModuleInfo*) () from /usr/lib/libsystemsettingsview.so.3
+#48 0x00007f762457ae89 in ModuleView::loadModule(QModelIndex const&) () from /usr/lib/libsystemsettingsview.so.3
+#49 0x00007f76169291c0 in ?? () from /usr/lib/qt/plugins/systemsettings_sidebar_mode.so
+#50 0x00007f76169265ad in ?? () from /usr/lib/qt/plugins/systemsettings_sidebar_mode.so
+#51 0x00007f7616926c03 in ?? () from /usr/lib/qt/plugins/systemsettings_sidebar_mode.so
+#52 0x00007f7621ec36fe in ?? () from /usr/lib/libQt5Qml.so.5
+#53 0x00007f7621d9ccf6 in ?? () from /usr/lib/libQt5Qml.so.5
+#54 0x00007f7621d9efcc in ?? () from /usr/lib/libQt5Qml.so.5
+#55 0x00007f7621d9fdde in QV4::QObjectMethod::callInternal(QV4::Value const*, QV4::Value const*, int) const () from /usr/lib/libQt5Qml.so.5
+#56 0x00007f7621dbe566 in ?? () from /usr/lib/libQt5Qml.so.5
+#57 0x00007f7621dc04df in ?? () from /usr/lib/libQt5Qml.so.5
+#58 0x00007f7621d5047e in QV4::Function::call(QV4::Value const*, QV4::Value const*, int, QV4::ExecutionContext const*) () from /usr/lib/libQt5Qml.so.5
+#59 0x00007f7621ee1d88 in QQmlJavaScriptExpression::evaluate(QV4::CallData*, bool*) () from /usr/lib/libQt5Qml.so.5
+#60 0x00007f7621e881ff in QQmlBoundSignalExpression::evaluate(void**) () from /usr/lib/libQt5Qml.so.5
+#61 0x00007f7621e89839 in ?? () from /usr/lib/libQt5Qml.so.5
+#62 0x00007f7621ec316d in QQmlNotifier::emitNotify(QQmlNotifierEndpoint*, void**) () from /usr/lib/libQt5Qml.so.5
+#63 0x00007f7621e6abae in QQmlData::signalEmitted(QAbstractDeclarativeData*, QObject*, int, void**) () from /usr/lib/libQt5Qml.so.5
+#64 0x00007f7622e99fe5 in ?? () from /usr/lib/libQt5Core.so.5
+#65 0x00007f761c53e799 in QQuickAbstractButtonPrivate::handleRelease(QPointF const&) () from /usr/lib/libQt5QuickTemplates2.so.5
+#66 0x00007f761c55c9c5 in QQuickControl::mouseReleaseEvent(QMouseEvent*) () from /usr/lib/libQt5QuickTemplates2.so.5
+#67 0x00007f76222da578 in QQuickItem::event(QEvent*) () from /usr/lib/libQt5Quick.so.5
+#68 0x00007f7623999362 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#69 0x00007f76239a2819 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#70 0x00007f7622e64962 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt5Core.so.5
+#71 0x00007f76222f6159 in QQuickWindowPrivate::deliverMouseEvent(QQuickPointerMouseEvent*) () from /usr/lib/libQt5Quick.so.5
+#72 0x00007f76222f78e8 in QQuickWindowPrivate::deliverPointerEvent(QQuickPointerEvent*) () from /usr/lib/libQt5Quick.so.5
+#73 0x00007f76222f86e8 in QQuickWindowPrivate::handleMouseEvent(QMouseEvent*) () from /usr/lib/libQt5Quick.so.5
+#74 0x00007f76232d19dd in QWindow::event(QEvent*) () from /usr/lib/libQt5Gui.so.5
+#75 0x00007f76222fa183 in QQuickWindow::event(QEvent*) () from /usr/lib/libQt5Quick.so.5
+#76 0x00007f7623999362 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#77 0x00007f76239a2819 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#78 0x00007f7622e64962 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt5Core.so.5
+#79 0x00007f76226140da in QQuickWidget::mouseReleaseEvent(QMouseEvent*) () from /usr/lib/libQt5QuickWidgets.so.5
+#80 0x00007f76239dd4de in QWidget::event(QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#81 0x00007f7622614294 in QQuickWidget::event(QEvent*) () from /usr/lib/libQt5QuickWidgets.so.5
+#82 0x00007f7623999362 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#83 0x00007f76239a2a68 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#84 0x00007f7622e64962 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt5Core.so.5
+#85 0x00007f76239a1afb in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) () from /usr/lib/libQt5Widgets.so.5
+#86 0x00007f76239f8c91 in ?? () from /usr/lib/libQt5Widgets.so.5
+#87 0x00007f76239fbc14 in ?? () from /usr/lib/libQt5Widgets.so.5
+#88 0x00007f7623999362 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#89 0x00007f76239a2819 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt5Widgets.so.5
+#90 0x00007f7622e64962 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt5Core.so.5
+#91 0x00007f76232c65d4 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) () from /usr/lib/libQt5Gui.so.5
+#92 0x00007f76232c7d16 in QGuiApplicationPrivate::processWindowSystemEvent(QWindowSystemInterfacePrivate::WindowSystemEvent*) () from /usr/lib/libQt5Gui.so.5
+#93 0x00007f76232a0c2c in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Gui.so.5
+#94 0x00007f761daecbac in ?? () from /usr/lib/libQt5XcbQpa.so.5
+#95 0x00007f76208d339e in g_main_context_dispatch () from /usr/lib/libglib-2.0.so.0
+#96 0x00007f76208d51b1 in ?? () from /usr/lib/libglib-2.0.so.0
+#97 0x00007f76208d51f1 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#98 0x00007f7622ebd020 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#99 0x00007f7622e634cc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt5Core.so.5
+#100 0x00007f7622e6b4d6 in QCoreApplication::exec() () from /usr/lib/libQt5Core.so.5
+#101 0x0000562f4184b46c in ?? ()
+#102 0x00007f7622837023 in __libc_start_main () from /usr/lib/libc.so.6
+#103 0x0000562f4184b4fe in _start ()
+[Inferior 1 (process 4103) detached]
